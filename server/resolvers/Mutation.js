@@ -1,4 +1,4 @@
-const { animals, animalClasses } = require("../db");
+const { animals, animalClasses } = require('../db');
 
 const Mutation = {
     addAnimal: (

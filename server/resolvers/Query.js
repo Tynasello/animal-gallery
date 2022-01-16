@@ -1,4 +1,4 @@
-const { mainCards, animals, animalClasses } = require("../db");
+const { mainCards, animals, animalClasses } = require('../db');
 
 const Query = {
     mainCards: () => mainCards,

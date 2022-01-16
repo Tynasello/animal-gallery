@@ -1,4 +1,4 @@
-const { animalClasses } = require("../db");
+const { animalClasses } = require('../db');
 
 const Animal = {
     animalClass: (parent, args, { animalClass }) => {
