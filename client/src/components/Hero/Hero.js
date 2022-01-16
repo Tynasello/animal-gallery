@@ -1,6 +1,6 @@
-import { gql, useQuery } from "@apollo/client";
-import React from "react";
-import animalImages from "../../assets/images";
+import { gql, useQuery } from '@apollo/client';
+import React from 'react';
+import animalImages from '../../assets/images';
 
 const CARDS_QUERY = gql`
     {
@@ -20,7 +20,7 @@ function Hero() {
     return (
         <div
             className="flex flex-wrap justify-center"
-            style={{ justifyContent: "center" }}
+            style={{ justifyContent: 'center' }}
         >
             {data.mainCards.map((card) => {
                 return (

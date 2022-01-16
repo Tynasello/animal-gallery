@@ -1,8 +1,8 @@
-import { gql, useQuery, useMutation } from "@apollo/client";
-import React from "react";
-import AnimalsSection from "../components/Animal/AnimalsSection";
-import ClassesSection from "../components/AnimalClasses/ClassesSection";
-import Hero from "../components/Hero/Hero.js";
+import { gql, useMutation, useQuery } from '@apollo/client';
+import React from 'react';
+import AnimalsSection from '../components/Animal/AnimalsSection';
+import ClassesSection from '../components/AnimalClasses/ClassesSection';
+import Hero from '../components/Hero/Hero.js';
 
 const ANIMALS_QUERY = gql`
     {
@@ -49,7 +49,7 @@ function LandingPage() {
     return (
         <div>
             <h1 className="text-center text-blue-700 text-xl mt-5">
-                {" "}
+                {' '}
                 Animal Bank
             </h1>
             <Hero />
@@ -57,7 +57,7 @@ function LandingPage() {
             <AnimalsSection animals={data.animals} />
             <div
                 className="flex flex-wrap justify-center my-5"
-                style={{ justifyContent: "center" }}
+                style={{ justifyContent: 'center' }}
             >
                 <button
                     className="font-bold py-2 px-4 "
@@ -65,13 +65,13 @@ function LandingPage() {
                         window.location.reload();
                         addAnimal({
                             variables: {
-                                species: "Holarctic Tree Frog",
-                                image: "holarctictreefrog",
-                                family: "Hylidae",
+                                species: 'Holarctic Tree Frog',
+                                image: 'holarctictreefrog',
+                                family: 'Hylidae',
                                 desc: [
-                                    "As traditionally defined, it was a wastebasket genus with more than 300 species found in Europe, Asia, Africa, and across the Americas.",
+                                    'As traditionally defined, it was a wastebasket genus with more than 300 species found in Europe, Asia, Africa, and across the Americas.',
                                 ],
-                                animalClass: "Amphibian",
+                                animalClass: 'Amphibian',
                             },
                         });
                     }}
@@ -84,7 +84,7 @@ function LandingPage() {
                         window.location.reload();
                         removeAnimal({
                             variables: {
-                                species: "Holarctic Tree Frog",
+                                species: 'Holarctic Tree Frog',
                             },
                         });
                     }}

@@ -1,8 +1,7 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import animalImages from "../assets/images";
-import { gql, useQuery } from "@apollo/client";
-import { Link } from "react-router-dom";
+import { gql, useQuery } from '@apollo/client';
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import animalImages from '../assets/images';
 
 const CLASS_QUERY = gql`
     query ($animalClassName: String!) {
@@ -31,7 +30,7 @@ function AnimalClassPage() {
             {animals.map((animal) => {
                 return (
                     <Link to={`/animal/${animal.species}`}>
-                        {" "}
+                        {' '}
                         <h3>{animal.species}</h3>
                         <img src={animalImages[animal.image]} />
                     </Link>

@@ -1,6 +1,6 @@
-import { gql, useQuery } from "@apollo/client";
-import React from "react";
-import AnimalClass from "./AnimalClass";
+import { gql, useQuery } from '@apollo/client';
+import React from 'react';
+import AnimalClass from './AnimalClass';
 
 const CLASSES_QUERY = gql`
     {
@@ -18,7 +18,7 @@ function ClassesSection(props) {
     if (error) return <div>Error Querying Data ⌛️ </div>;
 
     return (
-        <div className="flex flex-wrap " style={{ justifyContent: "center" }}>
+        <div className="flex flex-wrap " style={{ justifyContent: 'center' }}>
             {data.animalClasses.map((animalClass) => {
                 return <AnimalClass animalClass={animalClass}></AnimalClass>;
             })}
