@@ -4,4 +4,4 @@ Fullstack app showcasing animal gallery.
 
 Made while learning GraphQL with Apollo and following many tutorials; mostly [this one](https://www.youtube.com/watch?v=CFrKTrMJIBY&t=24s&ab_channel=LaithHarb).
 
-![animal-gallery](https://user-images.githubusercontent.com/63558019/149676173-3f25648a-7de7-4135-9081-b52c878bc7d2.gif)
+![animal-gallery](https://user-images.githubusercontent.com/63558019/149676265-af08cdf8-6e4a-4b57-a16a-fe71bd0e11d8.gif)
